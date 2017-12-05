@@ -3,8 +3,8 @@ require "../lib"
 
 RSpec.describe RomeConvertor do
   context "#to_dec string_arg" do
-    it "converts a Roman numeral to an integer" do
-      expect("MMCLIV".to_dec).to eq 2_154
+    it "MMCLIV to 1954" do
+      expect("MMCLIV".to_dec).to eq 1954
     end
  
     it "converts 'IV' to 4" do
