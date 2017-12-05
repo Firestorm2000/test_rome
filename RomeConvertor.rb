@@ -47,8 +47,8 @@ end
 
 def to_dec string_arg
 	result = 0
-  str = self
-  roman_mapping.values.each do |roman|
+	  str = self
+	  roman_mapping.values.each do |roman|
     while str.start_with?(roman)
       result += roman_mapping.invert[roman]
       str = str.slice(roman.length, str.length)
