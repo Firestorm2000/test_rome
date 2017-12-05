@@ -30,8 +30,13 @@ RSpec.describe RomeConvertor do
       it "converts 2 to 'II'" do
       expect("2".to_rome).to eq II
     end
-     it "converts 21 to 'XI'" do
-      expect("21".to_rome).to eq XI
+     it "converts 21 to 'XXI'" do
+      expect("21".to_rome).to eq XXI
+    end
+     it "converts 11 to 'XI'" do
+
+      expect("11".to_rome).to eq XI
+
     end
   end
 end
