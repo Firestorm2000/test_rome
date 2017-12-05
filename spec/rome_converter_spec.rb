@@ -24,8 +24,14 @@ RSpec.describe RomeConvertor do
      it "converts 4 to 'IV'" do
       expect("4".to_rome).to eq IV
     end
-     it "converts 2_154 to 'MMCLIV'" do
-      expect("2_154".to_rome).to eq MMCLIV
+     it "converts 1954 to 'MMCLIV'" do
+      expect("1954".to_rome).to eq MMCLIV
+    end
+      it "converts 2 to 'II'" do
+      expect("2".to_rome).to eq II
+    end
+     it "converts 21 to 'XI'" do
+      expect("21".to_rome).to eq XI
     end
   end
 end
