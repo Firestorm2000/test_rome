@@ -1,4 +1,5 @@
 require_relative  "../RomeConvertor.rb"
+require "../lib"
 
 describe RomeConvertor do
   context "#to_dec string_arg" do
