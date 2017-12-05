@@ -6,11 +6,15 @@ RSpec.describe RomeConvertor do
     it "MMCLIV to 1954" do
       expect("MMCLIV".to_dec).to eq 1954
     end
- 
+    it "IXX to 19" do
+      expect("IXX".to_dec).to eq 19
+    end
     it "converts 'IV' to 4" do
       expect("IV".to_dec).to eq 4
     end
- 
+   it "converts 'XV' to 15" do
+      expect("XV".to_dec).to eq 15
+    end
     it "converts 'MMMMCMXCIX' to 4999" do
       expect("MMMMCMXCIX".to_dec).to eq 4999
     end
