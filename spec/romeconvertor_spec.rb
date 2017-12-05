@@ -49,17 +49,17 @@ class NumberTest < Test::Unit::TestCase
   def test_2000; assert_equal('MM',2000.roman); end
   def test_2003; assert_equal('MMIII',2003.roman); end
 describe String do
-  context "#to_arabic" do
+  context "#to_dec" do
     it "converts a Roman numeral to an integer" do
-      expect("MMCLIV".to_arabic).to eq 2_154
+      expect("MMCLIV".to_dec).to eq 2_154
     end
  
     it "converts 'IV' to 4" do
-      expect("IV".to_arabic).to eq 4
+      expect("IV".to_dec).to eq 4
     end
  
     it "converts 'MMMMCMXCIX' to 4999" do
-      expect("MMMMCMXCIX".to_arabic).to eq 4999
+      expect("MMMMCMXCIX".to_dec).to eq 4999
     end
   end
 end

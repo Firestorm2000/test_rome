@@ -31,7 +31,7 @@ class String
   end
 end
 
-class RomeConverter
+class RomeConvertor
 
 def to_rome int_arg
 	roman = ""
