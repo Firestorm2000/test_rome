@@ -1,7 +1,7 @@
-require_relative  "../RomeConvertor.rb"
+#require_relative  "../RomeConvertor.rb"
 require "../lib"
 
-describe RomeConvertor do
+RSpec.describe RomeConvertor do
   context "#to_dec string_arg" do
     it "converts a Roman numeral to an integer" do
       expect("MMCLIV".to_dec).to eq 2_154
